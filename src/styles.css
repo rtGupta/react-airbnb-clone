@@ -47,20 +47,19 @@ section {
     margin-top: 0;
 }
 
+.cards-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
 .card {
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 175px;
     font-size: 0.75rem;
-
-    p {
-        margin: 0;
-    }
-
-    h2 {
-        margin: 0;
-    }
 }
 
 .card-image {
@@ -76,6 +75,16 @@ section {
 
 .card-star {
     height: 15px;
+}
+
+.card-title {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    margin-top: auto;
 }
 
 @media only screen and (max-width: 968px) {
