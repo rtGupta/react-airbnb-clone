@@ -16,13 +16,13 @@ export default function Card(props) {
       )}
       <img
         className="card-image"
-        src={`images/${props.img}`}
+        src={`images/${props.coverImg}`}
         alt="Katie Zaferes"
       />
       <div className="card-stats">
         <img className="card-star" src="images/star.png" alt="star" />
-        <span>{props.rating}</span>
-        <span className="gray">({props.reviewCount}) • </span>
+        <span>{props.stats.rating}</span>
+        <span className="gray">({props.stats.reviewCount}) • </span>
         <span className="gray">{props.location}</span>
       </div>
       <h2 className="card-title">{props.title}</h2>
