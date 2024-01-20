@@ -15,6 +15,15 @@ nav {
     }
 }
 
+h2 {
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.gray {
+    color: #918E9B;
+}
+
 section {
     padding: 36px;
 }
@@ -31,11 +40,42 @@ section {
 
 .header-title {
     margin-bottom: 15px;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .header-text {
     margin-top: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 175px;
+    font-size: 0.75rem;
+
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-stats {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-star {
+    height: 15px;
 }
 
 @media only screen and (max-width: 968px) {
@@ -45,13 +85,13 @@ section {
 
     .header-title {
         margin-bottom: 15px;
-        font-size: 45px;
+        font-size: 2.813rem;
     }
 
     .header-text {
         margin-top: 0;
         max-width: 400px;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
@@ -62,12 +102,12 @@ section {
 
     .header-title {
         margin-bottom: 15px;
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .header-text {
         margin-top: 0;
         max-width: 250px;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
