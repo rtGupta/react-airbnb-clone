@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Poppins', 'sans-serif';
 }
 
 nav {
@@ -11,5 +12,62 @@ nav {
 
     > img {
         width: 200px;
+    }
+}
+
+section {
+    padding: 36px;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-photo-grid {
+    max-width: 800px;
+    align-self: center;
+}
+
+.header-title {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.header-text {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 968px) {
+    .header-photo-grid {
+        max-width: 80%;
+    }
+
+    .header-title {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+
+    .header-text {
+        margin-top: 0;
+        max-width: 400px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .header-photo-grid {
+        max-width: 80%;
+    }
+
+    .header-title {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    .header-text {
+        margin-top: 0;
+        max-width: 250px;
+        font-size: 12px;
     }
 }
